@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
@@ -25,21 +26,25 @@
         <nav>
             <div class="row">
                 <img src="resources/img/logo-white.png" alt="Omnifood Logo" class="logo">
-                <ul class="main-nav">
-                    <li><a href="#">Food Delivery</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Our cities</a></li>
-                    <li><a href="#">Sign Up</a></li>
+                <img src="resources/img/logo.png" alt="Omnifood Logo" class="logo-black">
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#features">Food Delivery</a></li>
+                    <li><a href="#how-it-works">How it works</a></li>
+                    <li><a href="#cities">Our cities</a></li>
+                    <li><a href="#sign-up">Sign Up</a></li>
                 </ul>
+                <a class="mobile-nav-icon">
+                    <ion-icon name="menu" class="js--nav-icon"></ion-icon>
+                </a>
             </div>
         </nav>
         <div class="hero-text-box">
             <h1>Goodbye junk food. <br> Hello super healthy meals.</h1>
-            <a class="btn btn-full" href="#">I'm hungry</a>
-            <a class="btn btn-ghost" href="#">Show me more</a>
+            <a class="btn btn-full js--scroll-to-plan" href="#">I'm hungry</a>
+            <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
         </div>
     </header>
-    <section class="section-features">
+    <section class="section-features js--section-features" id="features">
         <div class="row">
             <h2>Get Food Fast &mdash; not fast food</h2>
             <p class="long-copy">
@@ -47,7 +52,7 @@
                 cooking. So let us take care of that, we’re really good at it, we promise!
             </p>
         </div>
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="col span-1-of-4 box">
                 <ion-icon name="infinite" class="icon-big"></ion-icon>
                 <h3>Up to 365 days/year</h3>
@@ -120,12 +125,12 @@
             </li>
         </ul>
     </section>
-    <section class="section-steps">
+    <section class="section-steps" id="how-it-works">
         <div class="row">
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
         </div>
         <div class="row">
-            <div class="col span-1-of-2 steps-box">
+            <div class="col span-1-of-2 steps-box js--wp-2">
                 <img src="resources/img/app-iPhone.png" alt="Omnifood App on iPhone" class="app-screen">
             </div>
             <div class="col span-1-of-2 steps-box">
@@ -148,11 +153,11 @@
             </div>
         </div>
     </section>
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
-        <div class="row">
+        <div class="row js--wp-3">
             <div class="col span-1-of-4 box">
                 <img src="resources/img/lisbon-3.jpg" alt="Lisbon">
                 <h3>Lisbon</h3>
@@ -247,12 +252,12 @@
             </div>
         </div>
     </section>
-    <section class="section-plans">
+    <section class="section-plans js--section-plans" id="sign-up">
         <div class="row">
             <h2>Start eating healthy today</h2>
         </div>
         <div class="row">
-            <div class="col span-1-of-3">
+            <div class="col span-1-of-3 js--wp-4">
                 <div class="plan-box">
                     <div>
                         <h3>Premium</h3>
@@ -435,10 +440,13 @@
             <p>Copyright &copy; 2021 by Omnifood. All rights reserved.</p>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
 </body>
-<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
 
 </html>
